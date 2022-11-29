@@ -11,6 +11,8 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { UserDataComponent } from './user-data/user-data.component';
 import { ToDoComponent } from './to-do/to-do.component';
 import { QuotesComponent } from './quotes/quotes.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import {HttpClientModule} from '@angular/common/http'
 
 const myRoute:Routes=[
   {
@@ -52,12 +54,14 @@ const myRoute:Routes=[
     ProductListComponent,
     UserDataComponent,
     ToDoComponent,
-    QuotesComponent
+    QuotesComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

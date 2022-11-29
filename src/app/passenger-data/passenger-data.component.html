@@ -1,14 +1,21 @@
+<app-nav-bar></app-nav-bar>
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-3">
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor="let i of passenger.data">
                     <div class="card" style="height:40rem;">
-                        <img src="{{i.logo}}" class="card-img-top" alt="...">
+                        <img src={{i.airline[0].logo}} class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Id:{{i._id}}</h5>
                           <p class="card-text">Name:{{i.name}}</p>
                           <p class="card-text">Trips:{{i.trips}}</p>
+                          <p class="card-text">Id:{{i.airline[0].id}}</p>
+                          <p class="card-text">Name:{{i.airline[0].name}}</p>
+                          <p class="card-text">Country:{{i.airline[0].country}}</p>
+                          <p class="card-text">Slogan:{{i.airline[0].slogan}}</p>
+                          <p class="card-text">Website:{{i.airline[0].website}}</p>
+                          <p class="card-text">Established:{{i.airline[0].established}}</p>
                          
                          
                         </div>
