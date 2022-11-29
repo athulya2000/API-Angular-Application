@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <table class="table table-striped text-centre">
+                
+                <thead>
+                  <tr>
+                    <th scop="col">Id</th>
+                    <th scop="col">Email</th>
+                    <th scop="col">First Name</th>
+                    <th scop="col">Last Name</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of data.data">
+                    <td>{{i.id}}</td>
+                    <td>{{i.email}}</td>
+                    <td>{{i.first_name}}</td>
+                    <td>{{i.last_name}}</td>
+                  </tr>
+                  
+                </tbody>
+             
+          </table>
+        </div>
+    </div>
+</div>
+
