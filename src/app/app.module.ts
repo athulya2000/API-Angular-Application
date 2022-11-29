@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { PassengerDataComponent } from './passenger-data/passenger-data.component';
 import { UsPublicdataComponent } from './us-publicdata/us-publicdata.component';
 import { UserInfoComponent } from './user-info/user-info.component';
+import { ProductListComponent } from './product-list/product-list.component';
 
 const myRoute:Routes=[
   {
@@ -20,6 +21,10 @@ const myRoute:Routes=[
   {
     path:"user",
     component:UserInfoComponent
+  },
+  {
+    path:"product",
+    component:ProductListComponent
   }
 ]
 
@@ -28,7 +33,8 @@ const myRoute:Routes=[
     AppComponent,
     PassengerDataComponent,
     UsPublicdataComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule,
